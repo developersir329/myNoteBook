@@ -15,7 +15,8 @@ ConnectToDB()
 
 
 app.use(cors({
-    origin:"*"
+    origin:"https://my-note-book-pi.vercel.app/",
+    methods:["GET","POST","PUT","DELETE"]
 }))
 
 app.use(express.json())
